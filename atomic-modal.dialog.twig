@@ -1,0 +1,4 @@
+{% set _modifiers = modal.modifiers|default([]) %}
+<div id="{{ modal.id }}" class="modal {{ _modifiers|join(' ') }} mfp-hide">
+  {{ modal.body }}
+</div>
