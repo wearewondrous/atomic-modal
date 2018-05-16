@@ -7,7 +7,7 @@ function initModal($, context) {
       open: function() {
         $('body').addClass('open-modal');
       },
-      close: function() {
+      beforeClose: function() {
         $('body').removeClass('open-modal');
       }
     }
